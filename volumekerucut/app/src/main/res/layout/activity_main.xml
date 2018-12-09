@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingTop="15dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALAS"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="isi alas"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/alas"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TINGGI"
+        android:layout_below="@+id/alas"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtTinggi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="isi tinggi"
+        android:layout_below="@+id/txtTinggi"
+        android:id="@+id/tinggi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:layout_below="@+id/tinggi"
+        android:id="@+id/hitung"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:layout_below="@+id/hitung"
+        android:layout_alignRight="@+id/hitung"
+        android:layout_alignEnd="@+id/hitung"
+        android:id="@+id/volume"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
